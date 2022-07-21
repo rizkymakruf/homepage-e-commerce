@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
-// import { PrevButton, NextButton } from "./EmblaCarouselButtons";
+import { memo } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
@@ -51,17 +51,17 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
 
           <div className="embla__slide">
             <div className="embla__slide__inner w-full">
-              <div className="w-full h-screen grid grid-cols-2 bg-[#22577E]">
-                <div className="w-full items-center md:px-16 md:py-72 md:space-y-5">
-                  <p className="text-5xl font-bold text-white">
+              <div className="w-full h-screen flex flex-col md:grid md:grid-cols-2 bg-[#22577E]">
+                <div className="w-full items-center xs:pt-14 pt-28 px-5 md:px-16 md:py-72 space-y-3 md:space-y-5">
+                  <p className="text-4xl md:text-5xl font-bold text-white">
                     Networking dan Fiber Optic
                   </p>
-                  <p className="text-white">
+                  <p className="text-white text-sm md:text-md">
                     Penyambungan / Splicing Fiber Cut , Relokasi Kabel - Reroute
                     Kabel FO , Penarikan Kabel Local Loop , Kabel Bacbone dan
                     Kabel Distribusi
                   </p>
-                  <button className="px-4 py-2 bg-white rounded-full font-bold">
+                  <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md bg-white rounded-full font-bold">
                     Lihat Info
                   </button>
                 </div>
@@ -73,18 +73,18 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
           </div>
           <div className="embla__slide">
             <div className="embla__slide__inner w-full">
-              <div className="w-full h-screen grid grid-cols-2 bg-[#22577E]">
-                <div className="w-full items-center md:px-16 md:py-72 md:space-y-5">
-                  <p className="text-5xl font-bold text-white">
+              <div className="w-full h-screen flex flex-col md:grid md:grid-cols-2 bg-[#22577E]">
+                <div className="w-full items-center xs:pt-14 pt-28 px-5 md:px-16 md:py-72 space-y-3 md:space-y-5">
+                  <p className="text-4xl md:text-5xl font-bold text-white">
                     IT Support Infrastructure
                   </p>
-                  <p className="text-white">
+                  <p className="text-white text-sm md:text-md">
                     Pekerjaan Infrastruktur dan pekerjaan ME yang berkaitan
                     dengan keperluan IT System meliputi : Penggelaran Kabel
                     Fiber Optic, Kabel , raised Floor Data,Wireless, Koneksi P2P
                     dll.
                   </p>
-                  <button className="px-4 py-2 bg-white rounded-full font-bold">
+                  <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md bg-white rounded-full font-bold">
                     Lihat Info
                   </button>
                 </div>
@@ -96,14 +96,16 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
           </div>
           <div className="embla__slide">
             <div className="embla__slide__inner w-full">
-              <div className="w-full h-screen grid grid-cols-2 bg-[#22577E]">
-                <div className="w-full items-center md:px-16 md:py-72 md:space-y-5">
-                  <p className="text-5xl font-bold text-white">ICT Hardware</p>
-                  <p className="text-white">
+              <div className="w-full h-screen flex flex-col md:grid md:grid-cols-2 bg-[#22577E]">
+                <div className="w-full items-center xs:pt-14 pt-28 px-5 md:px-16 md:py-72 space-y-3 md:space-y-5">
+                  <p className="text-4xl md:text-5xl font-bold text-white">
+                    ICT Hardware
+                  </p>
+                  <p className="text-white text-sm md:text-md">
                     Melayani penjualan perangkat keras ICT meliputi : Perangkat
                     Jaringan, Server, PC, Laptop, dll.
                   </p>
-                  <button className="px-4 py-2 bg-white rounded-full font-bold">
+                  <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md bg-white rounded-full font-bold">
                     Lihat Info
                   </button>
                 </div>
@@ -113,8 +115,6 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
               </div>
             </div>
           </div>
-
-          {/* ))} */}
         </div>
       </div>
       <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
@@ -123,7 +123,7 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
   );
 };
 
-export default EmblaCarousel;
+export default memo(EmblaCarousel);
 
 export const PrevButton = ({ enabled, onClick }) => (
   <button

@@ -1,8 +1,10 @@
-export default function Footer() {
+import { memo } from "react";
+
+const Footer = () => {
   return (
     <>
-      <div className="w-full bg-[#22577E] h-52 py-12 px-12 flex flex-col justify-center items-center">
-        <div className="flex pb-6 gap-4">
+      <div className="w-full bg-[#22577E] py-4 px-2 md:py-12 md:px-12 flex flex-col md:justify-center md:items-center">
+        <div className="flex flex-col md:flex-row pb-6 gap-1 md:gap-4">
           <div className="gap-1 text-white flex items-center">
             <svg
               width="16"
@@ -17,7 +19,7 @@ export default function Footer() {
               />
             </svg>
 
-            <p>+6185-2452-9988</p>
+            <p className="text-sm md:text-md">+6285-2452-9988</p>
           </div>
           <div className="gap-1 text-white flex items-center">
             <svg
@@ -35,7 +37,7 @@ export default function Footer() {
               />
             </svg>
 
-            <p>nuansaintipersada</p>
+            <p className="text-sm md:text-md">nuansaintipersada</p>
           </div>
           <div className="gap-1 text-white flex items-center">
             <svg
@@ -51,7 +53,7 @@ export default function Footer() {
               />
             </svg>
 
-            <p>nuansaintipersada</p>
+            <p className="text-sm md:text-md">nuansaintipersada</p>
           </div>
           <div className="gap-1 text-white flex items-center">
             <svg
@@ -67,13 +69,14 @@ export default function Footer() {
               />
             </svg>
 
-            <p>www.nuansaintipersada.com</p>
+            <p className="text-sm md:text-md">www.nuansaintipersada.com</p>
           </div>
         </div>
-        <div className="text-white">
+        <div className="text-white text-sm md:text-sm">
           © 2022 Nuansa Inti Persada | Your IT Partner
         </div>
       </div>
     </>
   );
-}
+};
+export default memo(Footer);
