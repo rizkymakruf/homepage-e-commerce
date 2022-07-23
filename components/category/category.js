@@ -50,7 +50,7 @@ const Category = () => {
             </svg>
           </div>
         </div>
-        <div className="w-full grid grid-cols-2 gap-2 md:gap-3">
+        <div className="w-full grid grid-cols-2 gap-1 md:gap-3">
           {data.map((a, id) => {
             return (
               <div>

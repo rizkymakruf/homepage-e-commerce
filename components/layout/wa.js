@@ -4,7 +4,7 @@ export default function Wa() {
   return (
     <>
       <Link href="https://api.whatsapp.com/send?phone=6282145554374">
-        <button className="w-12 h-12 bg-blue-600 animate-bounce bottom-8 right-8 rounded-full z-40 fixed flex justify-center items-center">
+        <button className="w-12 h-12 bg-blue-600 animate-bounce bottom-4 md:bottom-8 right-4 md:right-8 rounded-full z-40 fixed flex justify-center items-center">
           <svg
             width="16"
             height="16"
