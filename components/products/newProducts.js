@@ -37,7 +37,7 @@ const NewProduct = () => {
   return (
     <>
       <div className="w-full md:px-32 pb-5">
-        <div className="flex justify-between items-center w-full pb-3 md:pb-3 px-3">
+        <div className="flex justify-between items-center w-full pb-3 md:pb-3 px-3 md:px-0">
           <p className="text-sm md:text-lg font-bold text-gray-800">
             Produk Terbaru bulan ini
           </p>
