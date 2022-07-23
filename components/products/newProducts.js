@@ -36,16 +36,18 @@ const NewProduct = () => {
   ];
   return (
     <>
-      <div className="w-full px-32 pb-5">
-        <div className="flex justify-between items-center w-full pb-3 md:pb-3">
-          <p className="text-lg font-bold text-gray-800">
+      <div className="w-full md:px-32 pb-5">
+        <div className="flex justify-between items-center w-full pb-3 md:pb-3 px-3">
+          <p className="text-sm md:text-lg font-bold text-gray-800">
             Produk Terbaru bulan ini
           </p>
-          <div className="gap-2 flex items-center">
-            <button className="text-blue-500 font-semibold">Lihat semua</button>
+          <div className="gap-1 md:gap-2 flex items-center">
+            <button className="text-blue-500 font-semibold text-sm md:text-md">
+              Lihat semua
+            </button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 text-blue-500"
+              class="h-3 w-3 md:h-4 md:w-4 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -62,11 +64,11 @@ const NewProduct = () => {
             </svg>
           </div>
         </div>
-        <div className="bg-blue-100 w-full flex md:overflow-hidden overflow-hidden md:py-6 md:px-6 overflow-x-scroll md:grid md:grid-cols-5 gap-2 md:gap-6 rounded-lg">
+        <div className="bg-blue-100 w-full flex md:overflow-hidden overflow-hidden py-3 px-3 md:py-6 md:px-6 overflow-x-scroll md:grid md:grid-cols-5 gap-3 md:gap-6 md:rounded-lg">
           {data.map((a, id) => {
             return (
               <div className="w-full rounded-md relative list-product">
-                <div className="w-full h-24 md:h-40 relative rounded-md">
+                <div className="w-28 md:w-full h-24 md:h-40 relative rounded-md">
                   <Image
                     className="rounded-t-md"
                     src={a.image}

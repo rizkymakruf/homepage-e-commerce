@@ -1,5 +1,6 @@
 import Blog from "components/blog/blog";
 import Brand from "components/brand/brand";
+import Category from "components/category/category";
 import Footer from "components/layout/footer";
 import Navbar from "components/layout/navbar";
 import Wa from "components/layout/wa";
@@ -16,6 +17,9 @@ const Home = () => {
       }, [])}
       {useMemo(() => {
         return <EmblaCarousel />;
+      }, [])}
+      {useMemo(() => {
+        return <Category />;
       }, [])}
       {useMemo(() => {
         return <NewProducts />;

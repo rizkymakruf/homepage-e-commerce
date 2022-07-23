@@ -3,7 +3,10 @@ import { memo } from "react";
 const Footer = () => {
   return (
     <>
-      <div className="w-full bg-[#22577E] py-4 px-2 md:py-12 md:px-12 flex flex-col md:justify-center md:items-center">
+      <div
+        className="w-full bg-[#22577E] py-4 px-3 md:py-12 md:px-12 flex flex-col md:justify-center md:items-center"
+        id="contact"
+      >
         <div className="flex flex-col md:flex-row pb-6 gap-1 md:gap-4">
           <div className="gap-1 text-white flex items-center">
             <svg

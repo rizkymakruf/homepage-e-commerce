@@ -24,21 +24,21 @@ const Blog = () => {
   ];
   return (
     <>
-      <div className="w-full px-2 py-5 md:py-8">
+      <div className="w-full px-2 py-5 md:py-8" id="blog">
         <div className="flex flex-col justify-center items-center w-full pb-5 md:pb-8">
           <p className="text-2xl font-bold text-gray-800">Blog</p>
           <div className="w-24 mt-1 h-1 bg-blue-500 rounded-full"></div>
-          <p className="text-sm md:text-lg pt-4 text-center md:pt-8 text-gray-800">
+          <p className="text-sm md:text-lg pt-4 text-center text-gray-800">
             Dokumentasi Pekerjaan {"&"} Blog Nuansa Inti Persada
           </p>
         </div>
-        <div className="w-full flex md:py-10 md:px-5 md:overflow-hidden overflow-hidden overflow-x-scroll md:grid md:grid-cols-3 gap-3 md:gap-6">
+        <div className="w-full flex py-2 md:px-5 md:overflow-hidden overflow-hidden overflow-x-scroll md:grid md:grid-cols-3 gap-3 md:gap-6">
           {data.map((a, id) => {
             return (
               <div className="w-full flex-none md:h-96 border border-gray-300 rounded-md shadow-md md:hover:shadow-xl md:hover:shadow-blue-100 md:hover:scale-105 md:duration-300">
-                <div className="w-full h-40 md:h-56 bg-gray-400 relative">
+                <div className="w-full h-40 md:h-56 relative">
                   <Image
-                    className="rounded-md"
+                    className="rounded-t-md"
                     src={a.image}
                     layout={"fill"}
                     objectFit={"cover"}
@@ -55,7 +55,7 @@ const Blog = () => {
             );
           })}
         </div>
-        <button className="flex flex-row justify-center items-center w-full pt-5 md:pt-8 gap-2">
+        <button className="flex flex-row justify-center items-center w-full pt-5 gap-2">
           <p className="text-md font-bold text-blue-600">Lihat Semua Blog</p>
           <div>
             <svg

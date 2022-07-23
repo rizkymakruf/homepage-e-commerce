@@ -118,3 +118,8 @@
   box-shadow: 0 2px 4px 0 rgba(169, 169, 169, 0.2),
     0 2px 5px 0 rgba(140, 140, 140, 0.19);
 }
+
+html {
+  scroll-behavior: smooth;
+  animation-duration: 3s;
+}

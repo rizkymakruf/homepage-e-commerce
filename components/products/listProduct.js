@@ -166,14 +166,18 @@ const ListProduct = () => {
   ];
   return (
     <>
-      <div className="w-full px-32 pb-5">
+      <div className="w-full px-3 md:px-32 pb-5" id="product">
         <div className="flex justify-between items-center w-full pb-3 md:pb-3">
-          <p className="text-lg font-bold text-gray-800">All Product</p>
+          <p className="text-sm md:text-lg font-bold text-gray-800">
+            All Product
+          </p>
           <div className="gap-2 flex items-center">
-            <button className="text-blue-500 font-semibold">Lihat semua</button>
+            <button className="text-blue-500 font-semibold text-sm md:text-md">
+              Lihat semua
+            </button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 text-blue-500"
+              class="h-3 w-3 md:h-4 md:w-4 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >

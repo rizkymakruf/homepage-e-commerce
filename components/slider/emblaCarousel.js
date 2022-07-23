@@ -44,7 +44,10 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="embla w-full mt-24 px-32 py-7">
+    <div
+      className="embla w-full mt-16 md:mt-24 px-3 md:px-32 md:py-7"
+      id="home"
+    >
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {/* {slides.map((index) => ( */}
@@ -55,6 +58,28 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
                 <Image
                   className="rounded-xl"
                   src={Slide1}
+                  layout={"responsive"}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="embla__slide">
+            <div className="embla__slide__inner w-full">
+              <div className="w-full flex flex-col">
+                <Image
+                  className="rounded-xl"
+                  src={Slide2}
+                  layout={"responsive"}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="embla__slide">
+            <div className="embla__slide__inner w-full">
+              <div className="w-full flex flex-col">
+                <Image
+                  className="rounded-xl"
+                  src={Slide3}
                   layout={"responsive"}
                 />
               </div>
@@ -72,7 +97,7 @@ export default memo(EmblaCarousel);
 
 export const PrevButton = ({ enabled, onClick }) => (
   <button
-    className="embla__button embla__button--prev"
+    className="embla__button embla__button--prev hidden md:block"
     onClick={onClick}
     disabled={!enabled}
   >
@@ -84,7 +109,7 @@ export const PrevButton = ({ enabled, onClick }) => (
 
 export const NextButton = ({ enabled, onClick }) => (
   <button
-    className="embla__button embla__button--next"
+    className="embla__button embla__button--next hidden md:block"
     onClick={onClick}
     disabled={!enabled}
   >

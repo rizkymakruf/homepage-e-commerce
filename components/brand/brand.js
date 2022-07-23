@@ -15,7 +15,7 @@ const Brand = () => {
     <>
       <div className="w-full flex px-2 my-5 md:px-12 md:my-8">
         <div className="flex flex-col justify-center items-center w-full md:pb-8">
-          <p className="text-2xl font-bold text-gray-800">
+          <p className="text-2xl font-bold text-gray-800" id="info">
             Brand Yang Digunakan
           </p>
           <div className="w-72 mt-1 h-1 bg-blue-500 rounded-full"></div>
