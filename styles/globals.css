@@ -24,7 +24,7 @@
 /* embla */
 .embla {
   position: relative;
-  background-color: #f7f7f7;
+  background-color: white;
   /* padding: 20px; */
   /* max-width: 670px; */
   /* margin-left: auto;
@@ -85,7 +85,7 @@
   touch-action: manipulation;
   position: absolute;
   z-index: 1;
-  top: 55%;
+  top: 50%;
   transform: translateY(-50%);
   border: 0;
   width: 30px;
@@ -107,9 +107,14 @@
 }
 
 .embla__button--prev {
-  left: 27px;
+  left: 110px;
 }
 
 .embla__button--next {
-  right: 27px;
+  right: 110px;
+}
+
+.list-product {
+  box-shadow: 0 2px 4px 0 rgba(169, 169, 169, 0.2),
+    0 2px 5px 0 rgba(140, 140, 140, 0.19);
 }

@@ -3,9 +3,9 @@ import { memo } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import Slide1 from "../../public/static/images/slide.png";
-import Slide2 from "../../public/static/images/slide3.png";
-import Slide3 from "../../public/static/images/slide4.png";
+import Slide1 from "../../public/static/images/slider/slide1.png";
+import Slide2 from "../../public/static/images/slider/slide2.png";
+import Slide3 from "../../public/static/images/slider/slide3.png";
 
 const EmblaCarousel = ({ slides, options = { loop: false } }) => {
   const autoplay = useRef(
@@ -44,74 +44,19 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="embla w-full md:h-screen">
+    <div className="embla w-full mt-24 px-32 py-7">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {/* {slides.map((index) => ( */}
 
           <div className="embla__slide">
             <div className="embla__slide__inner w-full">
-              <div className="w-full h-screen flex flex-col md:grid md:grid-cols-2 bg-[#22577E]">
-                <div className="w-full items-center xs:pt-14 pt-28 px-5 md:px-16 md:py-72 space-y-3 md:space-y-5">
-                  <p className="text-4xl md:text-5xl font-bold text-white">
-                    Networking dan Fiber Optic
-                  </p>
-                  <p className="text-white text-sm md:text-md">
-                    Penyambungan / Splicing Fiber Cut , Relokasi Kabel - Reroute
-                    Kabel FO , Penarikan Kabel Local Loop , Kabel Bacbone dan
-                    Kabel Distribusi
-                  </p>
-                  <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md bg-white rounded-full font-bold">
-                    Lihat Info
-                  </button>
-                </div>
-                <div className="w-full items-center md:pr-14 md:py-52 md:space-y-5">
-                  <Image src={Slide1} layout={"responsive"} />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="embla__slide">
-            <div className="embla__slide__inner w-full">
-              <div className="w-full h-screen flex flex-col md:grid md:grid-cols-2 bg-[#22577E]">
-                <div className="w-full items-center xs:pt-14 pt-28 px-5 md:px-16 md:py-72 space-y-3 md:space-y-5">
-                  <p className="text-4xl md:text-5xl font-bold text-white">
-                    IT Support Infrastructure
-                  </p>
-                  <p className="text-white text-sm md:text-md">
-                    Pekerjaan Infrastruktur dan pekerjaan ME yang berkaitan
-                    dengan keperluan IT System meliputi : Penggelaran Kabel
-                    Fiber Optic, Kabel , raised Floor Data,Wireless, Koneksi P2P
-                    dll.
-                  </p>
-                  <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md bg-white rounded-full font-bold">
-                    Lihat Info
-                  </button>
-                </div>
-                <div className="w-full items-center md:pr-14 md:py-52 md:space-y-5">
-                  <Image src={Slide2} layout={"responsive"} />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="embla__slide">
-            <div className="embla__slide__inner w-full">
-              <div className="w-full h-screen flex flex-col md:grid md:grid-cols-2 bg-[#22577E]">
-                <div className="w-full items-center xs:pt-14 pt-28 px-5 md:px-16 md:py-72 space-y-3 md:space-y-5">
-                  <p className="text-4xl md:text-5xl font-bold text-white">
-                    ICT Hardware
-                  </p>
-                  <p className="text-white text-sm md:text-md">
-                    Melayani penjualan perangkat keras ICT meliputi : Perangkat
-                    Jaringan, Server, PC, Laptop, dll.
-                  </p>
-                  <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md bg-white rounded-full font-bold">
-                    Lihat Info
-                  </button>
-                </div>
-                <div className="w-full items-center md:pr-14 md:py-52 md:space-y-5">
-                  <Image src={Slide3} layout={"responsive"} />
-                </div>
+              <div className="w-full flex flex-col">
+                <Image
+                  className="rounded-xl"
+                  src={Slide1}
+                  layout={"responsive"}
+                />
               </div>
             </div>
           </div>
