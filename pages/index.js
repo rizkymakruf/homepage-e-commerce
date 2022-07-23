@@ -36,9 +36,9 @@ const Home = () => {
       {useMemo(() => {
         return <Footer />;
       }, [])}
-      {useMemo(() => {
+      {/* {useMemo(() => {
         return <Wa />;
-      }, [])}
+      }, [])} */}
     </>
   );
 };
