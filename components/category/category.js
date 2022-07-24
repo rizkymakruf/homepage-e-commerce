@@ -27,7 +27,7 @@ const Category = () => {
           <p className="md:text-lg text-sm font-bold text-gray-800">
             Kategori Populer
           </p>
-          <div className="gap-1 md:gap-2 flex items-center">
+          {/* <div className="gap-1 md:gap-2 flex items-center">
             <button className="text-blue-500 font-semibold md:text-lg text-sm">
               Lihat semua
             </button>
@@ -48,7 +48,7 @@ const Category = () => {
                 clip-rule="evenodd"
               />
             </svg>
-          </div>
+          </div> */}
         </div>
         <div className="w-full grid grid-cols-2 gap-1 md:gap-3">
           {data.map((a, id) => {

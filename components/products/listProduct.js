@@ -171,7 +171,7 @@ const ListProduct = () => {
           <p className="text-sm md:text-lg font-bold text-gray-800">
             All Product
           </p>
-          <div className="gap-2 flex items-center">
+          {/* <div className="gap-2 flex items-center">
             <button className="text-blue-500 font-semibold text-sm md:text-md">
               Lihat semua
             </button>
@@ -192,7 +192,7 @@ const ListProduct = () => {
                 clip-rule="evenodd"
               />
             </svg>
-          </div>
+          </div> */}
         </div>
         <div className="w-full grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-6">
           {data.map((a, id) => {

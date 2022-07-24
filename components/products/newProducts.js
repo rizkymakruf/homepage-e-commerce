@@ -41,7 +41,7 @@ const NewProduct = () => {
           <p className="text-sm md:text-lg font-bold text-gray-800">
             Produk Terbaru bulan ini
           </p>
-          <div className="gap-1 md:gap-2 flex items-center">
+          {/* <div className="gap-1 md:gap-2 flex items-center">
             <button className="text-blue-500 font-semibold text-sm md:text-md">
               Lihat semua
             </button>
@@ -62,7 +62,7 @@ const NewProduct = () => {
                 clip-rule="evenodd"
               />
             </svg>
-          </div>
+          </div> */}
         </div>
         <div className="bg-blue-100 w-full flex md:overflow-hidden overflow-hidden py-3 px-3 md:py-6 md:px-6 overflow-x-scroll md:grid md:grid-cols-5 gap-3 md:gap-6 md:rounded-lg">
           {data.map((a, id) => {

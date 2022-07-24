@@ -26,17 +26,17 @@ const Blog = () => {
     <>
       <div className="w-full px-2 py-5 md:py-8" id="blog">
         <div className="flex flex-col justify-center items-center w-full pb-5 md:pb-8">
-          <p className="text-2xl font-bold text-gray-800">Blog</p>
+          <p className="text-lg md:text-2xl font-bold text-gray-800">Blog</p>
           <div className="w-24 mt-1 h-1 bg-blue-500 rounded-full"></div>
           <p className="text-sm md:text-lg pt-4 text-center text-gray-800">
             Dokumentasi Pekerjaan {"&"} Blog Nuansa Inti Persada
           </p>
         </div>
-        <div className="w-full flex py-2 md:px-5 md:overflow-hidden overflow-hidden overflow-x-scroll md:grid md:grid-cols-3 gap-3 md:gap-6">
+        <div className="w-full flex py-2 md:px-5 md:overflow-hidden overflow-hidden overflow-x-scroll md:grid md:grid-cols-3 gap-2 md:gap-6">
           {data.map((a, id) => {
             return (
-              <div className="w-full flex-none md:h-96 border border-gray-300 rounded-md shadow-md md:hover:shadow-xl md:hover:shadow-blue-100 md:hover:scale-105 md:duration-300">
-                <div className="w-full h-40 md:h-56 relative">
+              <div className="w-40 md:w-full flex-none md:h-96 border border-gray-300 rounded-md shadow-md md:hover:shadow-xl md:hover:shadow-blue-100">
+                <div className="w-full h-36 md:h-56 relative">
                   <Image
                     className="rounded-t-md"
                     src={a.image}
@@ -45,8 +45,8 @@ const Blog = () => {
                     priority
                   />
                 </div>
-                <div className="p-3 grid grid-rows-2 space-y-1">
-                  <p className="text-sm md:text-lg w-full font-bold text-gray-700">
+                <div className="p-3 flex flex-col space-y-0">
+                  <p className="text-xs md:text-lg w-full font-bold text-gray-700">
                     {a.name}
                   </p>
                   <p className="md:text-md text-xs">{a.more}</p>
@@ -56,7 +56,9 @@ const Blog = () => {
           })}
         </div>
         <button className="flex flex-row justify-center items-center w-full pt-5 gap-2">
-          <p className="text-md font-bold text-blue-600">Lihat Semua Blog</p>
+          <p className="text-sm md:text-md font-bold text-blue-600">
+            Lihat Semua Blog
+          </p>
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
