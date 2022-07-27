@@ -1,3 +1,4 @@
+import Benner from "components/benner/benner";
 import Blog from "components/blog/blog";
 import Brand from "components/brand/brand";
 import Category from "components/category/category";
@@ -14,6 +15,9 @@ const Home = () => {
     <>
       {useMemo(() => {
         return <Navbar />;
+      }, [])}
+      {useMemo(() => {
+        return <Benner />;
       }, [])}
       {useMemo(() => {
         return <EmblaCarousel />;

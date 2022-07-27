@@ -44,10 +44,7 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div
-      className="embla w-full mt-16 md:mt-24 px-3 md:px-32 md:py-7"
-      id="home"
-    >
+    <div className="embla w-full mt-5 md:mt-5 px-3 md:px-32 md:py-7" id="home">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {/* {slides.map((index) => ( */}
