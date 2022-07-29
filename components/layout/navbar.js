@@ -5,7 +5,7 @@ import { memo } from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="w-full py-4 md:py-7 px-3 md:px-12 z-50 fixed top-0 bg-white shadow-sm shadow-blue-100">
+      <div className="w-full py-4 md:py-5 px-3 md:px-12 z-50 fixed top-0 bg-white">
         <div className="w-full flex items-center justify-between">
           <div className="w-14 md:w-32 h-5 md:h-10">
             <Image src={Logo} />
@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="flex gap-4 ">
               <div>
-                <a href="#home">
+                <a href="#benner">
                   <button className="font-semibold text-md flex gap-1 items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,5 @@
 import Benner from "components/benner/benner";
+import Core from "components/benner/core";
 import Blog from "components/blog/blog";
 import Brand from "components/brand/brand";
 import Category from "components/category/category";
@@ -18,6 +19,9 @@ const Home = () => {
       }, [])}
       {useMemo(() => {
         return <Benner />;
+      }, [])}
+      {useMemo(() => {
+        return <Core />;
       }, [])}
       {useMemo(() => {
         return <EmblaCarousel />;
