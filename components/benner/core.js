@@ -189,12 +189,12 @@ const Core = ({ slides }) => {
 
   return (
     <>
-      <div className="w-full py-3 px-10">
-        <p className="text-6xl font-semibold text-[#22577E]">
+      <div className="w-full py-3 px-5 md:px-10">
+        <p className="w-full text-4xl md:text-6xl font-semibold text-[#22577E]">
           Our Cores Business
         </p>
       </div>
-      <div className="embla1 w-full py-5">
+      <div className="embla1 w-full py-5 hidden md:block">
         <div className="embla__viewport1" ref={viewportRef}>
           <div className="embla__container1 px-8 gap-5">
             {/* {slides.map((index) => ( */}
@@ -229,6 +229,33 @@ const Core = ({ slides }) => {
         </div>
         {/* <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
       <NextButton onClick={scrollNext} enabled={nextBtnEnabled} /> */}
+      </div>
+      <div className="block md:hidden w-full">
+        <div className="w-full flex py-2 px-3 md:px-5 md:overflow-hidden overflow-hidden overflow-x-scroll gap-3">
+          {data.map((a, id) => {
+            return (
+              <>
+                <div className="h-80 border-2 border-[#22577E] px-1 py-2 md:px-3 md:py-6 rounded-md">
+                  <div className="w-full flex justify-center items-center">
+                    <div className="w-10 h-10 md:w-16 md:h-16 bg-[#22577E] rounded-md flex justify-center items-center">
+                      {a.svg}
+                    </div>
+                  </div>
+                  <div className="w-36 md:w-full flex justify-center items-center pt-5 md:pt-14">
+                    <p className="font-semibold text-md text-[#22577E] text-center">
+                      {a.head}
+                    </p>
+                  </div>
+                  <div className="w-full flex justify-center items-center pt-3 md:pt-5">
+                    <p className="text-sm text-justify text-[#22577E]">
+                      {a.title}
+                    </p>
+                  </div>
+                </div>
+              </>
+            );
+          })}
+        </div>
       </div>
     </>
   );

@@ -91,7 +91,7 @@ const Footer = () => {
             <p className="text-sm md:text-md">info@nuansaintipersada.co.id</p>
           </div>
         </div>
-        <div className="text-white text-sm md:text-sm pb-5 flex items-center gap-2">
+        <div className="text-white text-sm pb-5 flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
