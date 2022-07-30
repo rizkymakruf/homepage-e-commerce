@@ -189,7 +189,7 @@ const Core = ({ slides }) => {
 
   return (
     <>
-      <div className="w-full py-3 px-5 md:px-10">
+      <div className="w-full py-3 px-5 md:px-10" id="core">
         <p className="w-full text-4xl md:text-6xl font-semibold text-[#22577E]">
           Our Cores Business
         </p>

@@ -20,9 +20,11 @@ const Benner = () => {
                 Security, Entreprise Network For corporate, PABX Solution.
               </p>
               <div className="w-full flex gap-3 pt-5">
-                <button className="text-sm text-[#22577E] underline font-semibold hover:font-bold">
-                  Lihat Selengkapnya
-                </button>
+                <a href="#core">
+                  <button className="text-sm text-[#22577E] underline font-semibold hover:font-bold">
+                    Lihat Selengkapnya
+                  </button>
+                </a>
               </div>
             </div>
           </div>
