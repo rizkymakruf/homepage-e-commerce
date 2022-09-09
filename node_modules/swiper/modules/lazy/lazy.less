@@ -19,11 +19,12 @@
   border-radius: 50%;
   border-top-color: transparent;
 }
-
-.swiper-slide-visible .swiper-lazy-preloader {
-  animation: swiper-preloader-spin 1s infinite linear;
+.swiper:not(.swiper-watch-progress),
+.swiper-watch-progress .swiper-slide-visible {
+  .swiper-lazy-preloader {
+    animation: swiper-preloader-spin 1s infinite linear;
+  }
 }
-
 .swiper-lazy-preloader-white {
   --swiper-preloader-color: #fff;
 }
@@ -31,6 +32,9 @@
   --swiper-preloader-color: #000;
 }
 @keyframes swiper-preloader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(360deg);
   }
